@@ -105,3 +105,24 @@ Process:
 Data generated locally in SQLite.
 Uploaded via FastAPI endpoint /his_d/create_and_upload.
 
+
+# In try files
+
+In the try.py , try3.py , try_f.py files I have created sample data & uploaded to dropbox, got the data using straightforward api call for testing, utilized streamlit frontend respectively.
+In console, it resulted as :
+
+INFO:     Will watch for changes in these directories: ['my_local_drive:\\folder\\Unified Platform']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [12948] using StatReload
+INFO:     Started server process [19704]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Fetched rows for IDs [4, 10, 14]: [(4, 'Patient4', 24, 'City4', 'Condition4'), (10, 'Patient10', 30, 'City10', 'Condition10'), (14, 'Patient4', 24, 'City4', 'Condition4')]
+INFO:     127.0.0.1:57552 - "GET /patients/self_aware?ids=4,10,14 HTTP/1.1" 200 OK
+Fetched rows for IDs [6, 9, 18]: [(6, 'Patient6', 26, 'City6', 'Condition6'), (9, 'Patient9', 29, 'City9', 'Condition9'), (18, 'Patient8', 28, 'City8', 'Condition8')]
+INFO:     127.0.0.1:57570 - "GET /patients/self_aware?ids=6,9,18 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19704]
+INFO:     Stopping reloader process [12948]
